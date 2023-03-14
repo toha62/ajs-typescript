@@ -20,3 +20,9 @@ cart.add(new Movie(
 ));
 
 console.log(cart.items);
+console.log('Total cost: ' + cart.getTotalCost());
+console.log('Total cost with discount 10%: ' + cart.getTotalCostWithDiscount(10));
+
+cart.deleteById(1008);
+
+console.log(cart.items);
